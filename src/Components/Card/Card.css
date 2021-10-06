@@ -1,0 +1,10 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: black 2px solid;
+    border-radius: 10px;
+    width: 30vw;
+}
+

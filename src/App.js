@@ -1,8 +1,13 @@
 import React from 'react';
 import './App.css';
+import Card from "./Components/Card/Card";
 
 //fetch data
+
+
+
 //home page loads first 20
+
 
 
 function App() {
@@ -14,15 +19,7 @@ function App() {
 
 
     <div>
-        <div className="cardContainer">
-            <h3>name</h3>
-            <h3>image</h3>
-            <h3>moves</h3>
-            <h3>abilities</h3>
-            <p>ability</p>
-            <p>ability</p>
-            <p>ability</p>
-        </div>
+        <Card/>
     </div>
   );
 }
