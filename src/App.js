@@ -27,16 +27,17 @@ function App() {
 
     }, []);
 
-
-
     //loading message while fetching data
     //button previous 20 (disabled at 0) - button next 20 (disabled at max )
+    //to get url map result.data
 
+    //bij deze map functie liep ik vast:
     return (
-        <Card
-
-        />
-
+        {allPoke.data.map ((pokemon)=>{
+                    return  <Card
+                        url={allPoke.url}
+                    />
+            })}
     );
 }
 

@@ -4,7 +4,7 @@ import axios from "axios";
 
 //card: name, sprite, nr of moves, weight, list of abilities
 
-function Card() {
+function Card({url}) {
 
 //state
     const [pokemon, setPokemon] = useState(null);
@@ -13,7 +13,7 @@ function Card() {
     useEffect(() => {
             async function fetchData() {
                 try {
-                    const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/5/`);
+                    const result = await axios.get(url);
                     console.log(result.data);
                     setPokemon(result.data)
                 } catch (e) {
@@ -21,9 +21,11 @@ function Card() {
                 }
             };
             //call the function
-            fetchData();
+            if (url) {
+                fetchData();
+            }
 
-        }, []
+        }, [url]
     )
 
     return ( <div>
