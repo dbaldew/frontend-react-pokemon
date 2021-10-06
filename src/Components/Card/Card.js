@@ -13,7 +13,7 @@ function Card() {
     useEffect(() => {
             async function fetchData() {
                 try {
-                    const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/jigglypuff/`);
+                    const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/31/`);
                     console.log(result.data);
                     setPokemon(result.data)
                 } catch (e) {
