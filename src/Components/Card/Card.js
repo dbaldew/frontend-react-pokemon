@@ -4,7 +4,7 @@ import axios from "axios";
 
 //card: name, sprite, nr of moves, weight, list of abilities
 
-function Card({url}) {
+function Card(url) {
 
 //state
     const [pokemon, setPokemon] = useState(null);
